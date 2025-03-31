@@ -16,9 +16,9 @@ function App() {
     if(todos.length>0){
     
     localStorage.setItem('todos',JSON.stringify(todos))
-    
+    }
   }, [todos])
-}
+
   
   useEffect(() => {
     let todostring=localStorage.getItem('todos')
