@@ -13,7 +13,7 @@ function App() {
   const [todos, settodos] = useState([])
   const [showfinished, setshowfinished] = useState(false)
   useEffect(() => {
-    if(todos.length>0){
+    if(todos.length>=0){
     localStorage.setItem('todos',JSON.stringify(todos))
     }
   }, [todos])
